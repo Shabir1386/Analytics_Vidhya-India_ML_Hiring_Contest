@@ -1,0 +1,25 @@
+Approach on building ML model for Loan delinquency problem statement
+
+Steps Involved:
+
+1. Import the relevant libraries
+2. Import the train dataset from train file
+3. Pre-process the data in the dataset loaded from the file using sns plots
+4. Create Dependent and Independent Variables
+5. Create Encode Function for Train dataset and apply for the necessary columns
+6. Create DataFrames for both X and y variables
+7. Scale the Dataset using Binarizer with threshold value as 0.5
+8. Split the Dataset using train_test_split of scikit learn
+9. Build a model using SVC Classifier with linear kernel and fit the train data considering X_train and y_train
+10. Predict the Train set using X_test
+11. Create the Confusion Matrix
+12. Evaluate True Positives, True Negatives, False Positives, False Negatives
+13. Calculate F1-Score
+14. Calculate AUC
+15. Calculate Classifer Score
+16. Test the model using Test data after data pre-processing, encoding and Scaling
+17. Use the predict method of Classifier build and publish the output
+18. Concatenate the output with loan_id column and export the output into a .csv file (submission.csv)
+
+Outcome:
+submission.csv file gets created in the "Home" dir of Jupyter Notebook
